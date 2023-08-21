@@ -53,11 +53,20 @@ This README provides an overview of a MERN (MongoDB, Express.js, React, Node.js)
 
 ## Getting Started
 
-1. **Install Dependencies**: Run `npm install` to install the necessary Node.js packages defined in `package.json`.
+1. **Envinronment variables**: Create environment variables as shown below in an `.env` file
 
-2. **Database Setup**: Ensure you have a MongoDB instance running and configure the connection in `server.js` or in an environment variable.
+```env
+PORT=4000
+MONGO_URI=mongodb+srv://your_username:your_password@hostname/?retryWrites=true&w=majority
+```
 
-3. **Start the Server**: Run `npm start` to start the Express server.
+2. **Install Dependencies**: Run `npm install` to install the necessary Node.js packages defined in `package.json`.
+
+3. **Database Setup**: Ensure you have a MongoDB instance running and configure the connection in `server.js` or in an environment variable.
+
+4. **Start the Server**: Run `npm start` to start the Express server.
+
+
 
 ## API Endpoints
 
@@ -100,11 +109,8 @@ If you wish to contribute to this project, please follow these guidelines:
 4. Create a pull request with a clear description of your changes.
 
 ## License
-This project is licensed under the [LICENSE_NAME] License.
+This project is licensed under the MIT License.
 
 ## Author
 Ricardo Ribeiro
-
-
-
 
