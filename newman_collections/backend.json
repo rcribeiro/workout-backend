@@ -1,0 +1,113 @@
+{
+  "info": {
+    "_postman_id": "YOUR_POSTMAN_COLLECTION_ID",
+    "name": "Sample Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GET all workouts",
+      "request": {
+        "url": "http://localhost:4000/api/workouts", 
+        "method": "GET",
+        "header": [],
+        "description": "Send a GET request all workouts."
+      },
+      "response": [{"msg": "GET all workouts"}]
+    },
+    {
+      "name": "GET a single workout",
+      "request": {
+        "url": "http://localhost:4000/api/workouts/123", 
+        "method": "GET",
+        "header": [],
+        "description": "Send a GET to get a single workout."
+      },
+      "response": [{"msg": "GET a single workout"}]
+    },
+    {
+      "name": "POST a new workout",
+      "request": {
+        "url": "http://localhost:4000/api/workouts/", 
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+         "mode": "raw",
+         "raw": {
+           "title": "Situps",
+           "reps": 50,
+           "load": 0
+         }
+        },
+       "description": "Send a POST request to create a new workout."
+      },
+      "response": [
+        {
+          "name": "Successful POST",
+          "status": "200 OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": {
+              "_id": "12345", 
+              "title": "Situps",
+              "reps": 50,
+              "load": 50,
+              "createdAt": "2023-08-20T00:00:00.000Z", 
+              "updatedAt": "2023-08-20T00:00:00.000Z" 
+            }
+          }
+        },
+        {
+          "name": "Failed POST",
+          "status": "400 Bad Request",
+          "code": 400,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": {
+              "error": "Error message from your server"
+            }
+          }
+        }
+      ]  
+    },
+    {
+      "name": "DELETE a workout",
+      "request": {
+        "url": "http://localhost:4000/api/workouts/123", 
+        "method": "GET",
+        "header": [],
+        "description": "Send a DELETE request to delete a workout."
+      },
+      "response": [{"msg": "DELETE a workout"}]
+    },
+    {
+      "name": "UPDATE a workout",
+      "request": {
+        "url": "http://localhost:4000/api/workouts/123", 
+        "method": "PATCH",
+        "header": [],
+        "description": "Send a PATCH request to update a workout."
+      },
+      "response": [{"msg": "UPDATE a workout"}]
+    }
+  ]
+}
+

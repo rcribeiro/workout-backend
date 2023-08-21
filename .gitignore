@@ -1,0 +1,48 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore log files and error reports
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Ignore environment-specific config files
+.env
+.env.local
+.env.*.local
+
+# Ignore OS-generated files
+.DS_Store
+Thumbs.db
+
+# Ignore npm package lock files
+package-lock.json
+yarn.lock
+
+# Ignore build or output directories
+/build
+/dist
+
+# Ignore user-specific IDE or editor settings
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Ignore test directories and files
+/test
+
+# Ignore database files
+*.sqlite
+*.db
+
+# Ignore any files and directories you want to exclude
+# custom_file.txt
+# custom_directory/
+
