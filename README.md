@@ -59,6 +59,7 @@ This README provides an overview of a MERN (MongoDB, Express.js, React, Node.js)
 PORT=4000
 MONGO_URI=mongodb+srv://your_username:your_password@hostname/?retryWrites=true&w=majority
 ```
+Replace the hostname, your_username and your_password with your MongoDB Atlas credentials.
 
 2. **Install Dependencies**: Run `npm install` to install the necessary Node.js packages defined in `package.json`.
 
