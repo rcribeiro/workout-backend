@@ -1,4 +1,4 @@
-# MERN Backend Project README
+# WORKOUT project
 
 This README provides an overview of a MERN (MongoDB, Express.js, React, Node.js) tech stack for the backend project. This project includes controllers, data storage, models, routes, scripts, and testing collections. It is designed to manage workout data.
 
