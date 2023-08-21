@@ -4,6 +4,7 @@ This README provides an overview of a MERN (MongoDB, Express.js, React, Node.js)
 
 ## Project Structure
 
+```
 .
 ├── controllers
 │ └── workoutController.js
@@ -30,6 +31,7 @@ This README provides an overview of a MERN (MongoDB, Express.js, React, Node.js)
 │ └── update-workout-by-id.sh
 └── server.js
 
+```
 
 ### Project Components
 
